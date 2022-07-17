@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #f0f0f0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#sudokuBoard {
+  margin: 30px auto;
+  // max-width: 900px;
+  // height: 450px;
+  display: grid;
+  grid-template-columns: repeat(9, 50px);
+  grid-gap: 2px;
+  background-color: gray;
+  border: 2px solid gray;
+
+  input[type=number] {
+    all: unset;
+    width: 50px;
+    height: 50px;
+    border: none;
+    text-align: center;
+    font-family: "arial";
+    font-size: 1.55rem;
+    background-color: #fff;
+    &::-webkit-inner-spin-button {
+      display: none;
+    }
+
+    &.bg-gray {
+      background-color:rgb(207, 207, 207);
+    }
+    &:focus {
+      outline: auto;
+    }
+    &:disabled{
+      background-color: auto;
+    }
+  }
+}
+
+input[type=button] {
+  display: inline;
+  padding: 1rem 1.5rem;
+  border-radius: 0.5rem;
+  background-color: rgb(231, 231, 231);
+  border: 1px solid rgb(128, 128, 128);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  &:hover {
+    background-color: rgba(gray, 0.3);
+  }
+  &:active {
+    background-color: rgba(gray, 0.5);
+  }
+}

@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f0f0f0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#sudokuBoard {
+  margin: 30px auto;
+  display: grid;
+  grid-template-columns: repeat(9, 50px);
+  grid-gap: 2px;
+  background-color: gray;
+  border: 2px solid gray;
+}
+#sudokuBoard input[type=number] {
+  all: unset;
+  width: 50px;
+  height: 50px;
+  border: none;
+  text-align: center;
+  font-family: "arial";
+  font-size: 1.55rem;
+  background-color: #fff;
+}
+#sudokuBoard input[type=number]::-webkit-inner-spin-button {
+  display: none;
+}
+#sudokuBoard input[type=number].bg-gray {
+  background-color: #cfcfcf;
+}
+#sudokuBoard input[type=number]:focus {
+  outline: auto;
+}
+#sudokuBoard input[type=number]:disabled {
+  background-color: auto;
+}
+
+input[type=button] {
+  display: inline;
+  padding: 1rem 1.5rem;
+  border-radius: 0.5rem;
+  background-color: #e7e7e7;
+  border: 1px solid gray;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+input[type=button]:hover {
+  background-color: rgba(128, 128, 128, 0.3);
+}
+input[type=button]:active {
+  background-color: rgba(128, 128, 128, 0.5);
+}
+
+/*# sourceMappingURL=main.css.map */
