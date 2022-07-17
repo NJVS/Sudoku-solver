@@ -2,7 +2,7 @@
 
 A simple sudoku solver using Vanilla Javascipt.
 Backtracking algorithm idea from [Python Sudoku Solver - Computerphile](https://www.youtube.com/watch?v=G_UYXzGuqvM)
-Check out the [Live Demo]()
+Check out the [Live Demo](https://NJVS.github.io/Sudoku-solver)
 
 ### ScreenShot
 
