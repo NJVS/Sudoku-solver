@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack"
+    "build": "webpack",
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [],
   "author": "Neil Sagisi",
@@ -17,5 +18,9 @@
     "style-loader": "^3.3.1",
     "webpack": "^5.73.0",
     "webpack-cli": "^4.10.0"
+  },
+  "homepage": "https://NJVS.github.io/Sudoku-solver",
+  "dependencies": {
+    "gh-pages": "^4.0.0"
   }
 }
